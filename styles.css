@@ -58,3 +58,17 @@
     text-align: center;
     padding: 10px;
   }
+
+  @media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "section"
+        "article"
+        "aside"
+        "footer";
+    }
+  }
